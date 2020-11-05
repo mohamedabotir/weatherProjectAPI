@@ -19,8 +19,9 @@ app.use(express.static('website'));
 
 
 // Setup Server
-app.listen(3000,()=>{
-    console.log("Server-Running");
+const port=3000;
+app.listen(port,()=>{
+    console.log("Listening on port "+port);
 });
 app.get("/getData",(req,res)=>{
 res.send(projectData);

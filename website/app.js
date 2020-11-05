@@ -4,7 +4,7 @@
 // Create a new date instance dynamically with JS
 let d = new Date();
 let Entry={};
-let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
+let newDate = d.getMonth()+1+'.'+ d.getDate()+'.'+ d.getFullYear();
 const apiID="a175f84440755a2a5a3ff8f6f0af80ef";
 let zipCode;
 let url;

@@ -17,7 +17,7 @@ feeling=feelingParameter.value;
 if(zipCode==""){
     alert("ZIP Code Empty!!");
 }
-url=`http://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&appid=${apiID}`;
+url=`http://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&appid=${apiID}&units=metric`;
 getData(url).then(function(data){
     postData("/all",{temp:data.temp,feeling:data.feeling,zip:data.zip,date:newDate});
 
